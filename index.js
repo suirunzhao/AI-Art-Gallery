@@ -1,14 +1,14 @@
 let express = require("express");
 let app = express();
 
-//DB - 1 - Connect to mongo DB
-const { Database } = require("quickmongo");
-const db = new Database("mongodb+srv://Siri:0yi0iOQeKJsMrdR0@cluster0.wfjupnq.mongodb.net/?retryWrites=true&w=majority");
-db.on("ready", () => {
-    console.log("Connected to the database");
-});
+// //DB - 1 - Connect to mongo DB
+// const { Database } = require("quickmongo");
+// const db = new Database("mongodb+srv://Siri:0yi0iOQeKJsMrdR0@cluster0.wfjupnq.mongodb.net/?retryWrites=true&w=majority");
+// db.on("ready", () => {
+//     console.log("Connected to the database");
+// });
 
-db.connect();
+// db.connect();
 
 
 
@@ -35,8 +35,8 @@ app.post('/infoSave', (req, res) => {
         date: currentDate,
         info: req.body
     }
-    //DB - 2 - add values to the DB
-    db.push("imageUploadData", obj);
+    // //DB - 2 - add values to the DB
+    // db.push("imageUploadData", obj);
 
     // coffeeTracker.push(obj);
     // console.log(coffeeTracker);
@@ -46,11 +46,11 @@ app.post('/infoSave', (req, res) => {
 //create a GET route to send the data
 app.get('/data', (req, res) => {
     console.log("A GET req for the data")
-    //DB - 3 - fetch from the DB
-    db.get("imageUploadData").then(imageData => {
-        let obj = {data: imageData};
-        res.json(obj);
-    })
+    // //DB - 3 - fetch from the DB
+    // db.get("imageUploadData").then(imageData => {
+    //     let obj = {data: imageData};
+    //     res.json(obj);
+    // })
 });
 
 //Initialize the actual HTTP server
