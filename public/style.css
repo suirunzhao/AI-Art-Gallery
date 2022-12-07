@@ -1,0 +1,491 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'CormorantSC';
+    /*a name to be used later*/
+    src: url('assets/CormorantSC-Medium.ttf');
+    /*URL to font*/
+}
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: black;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    font-family: CormorantSC;
+}
+
+.home {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 40px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home:hover{
+    color: blueviolet;
+    transition: .3s;
+}
+
+nav ul {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul li a:hover {
+    color: blueviolet;
+    transition: .3s;
+}
+
+.content{
+    width: 100%;
+    top: 75%;
+    text-align: center;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-para-1{
+    color: rgba(255, 255, 255, 1);
+    font-family: CormorantSC;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.cover-para-2{
+    color: rgba(255, 255, 255, 0.6);
+    font-family: CormorantSC;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 16px auto;
+}
+
+.arrow {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+}
+
+.arrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+}
+
+.arrow span:nth-child(2){
+    animation-delay: -.2s;
+}
+
+.arrow span:nth-child(3){
+    animation-delay: -.4s;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.gallery{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+.gallery-title{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 40px;
+    text-align: center;
+    margin: 40px;
+    font-family: CormorantSC;
+}
+
+#gallery {
+    line-height:0;
+    -webkit-column-count:4; /* split it into 5 columns */
+    -webkit-column-gap:16px; /* give it a 5px gap between columns */
+    -moz-column-count:4;
+    -moz-column-gap:16px;
+    column-count:4;
+    column-gap:16px;
+ }
+
+ #gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom:5px; /* to match column gap */
+    filter: grayscale(100%);
+    transition: filter 1s;
+ }
+
+ #gallery img:hover {
+    filter:none;
+ }
+
+ @media (max-width: 1200px) {
+    #gallery {
+     -moz-column-count:    3;
+     -webkit-column-count: 3;
+     column-count:         3;
+    }
+ }
+
+ @media (max-width: 1000px) {
+    #gallery {
+     -moz-column-count:    2;
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+ }
+
+ @media (max-width: 800px) {
+    #gallery {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+ }
+
+ @media (max-width: 400px) {
+    #gallery {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+ }
+
+ .tutorial{
+    width: 100%;
+    color: white;
+    background: url(assets/Motka_ight_green_blue_composition_of_charts_graphics_plain_ligh_e93aa401-7616-46e9-bf76-996a0b3a4932.png) no-repeat right;
+    background-size: 65%;
+    overflow: hidden;
+    padding: 100px 0;
+    margin-bottom: 120px;
+ }
+
+.tutorial-inner{
+    width: 35%;
+    height: 50%;
+    float: left;
+    background-color: black;
+    padding: 150px;
+}
+
+.tutorial-inner h2{
+    font-size: 32px;
+    margin: 20px 0;
+    font-family: CormorantSC;
+}
+ 
+ .tutorial-title{
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    font-weight: 600;
+    justify-content:space-between;
+    cursor: pointer;
+ }
+
+ .tutorial-title span::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    border-radius: 4px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -4px;
+    transition: 0.3s;
+ }
+
+ .tutorial-title span:hover::after{
+    width: 100%;
+ }
+
+ .text{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 20px;
+ }
+
+ .upload{
+    width: 100%;
+    color: white;
+    background: url(assets/bevelalala_abstract_paint_waves_vibrant_colors_on_a_black_bacgr_3d5a552d-743b-4c68-b6cf-9c12d2627043.png) no-repeat left;
+    background-size: 65%;
+    overflow: hidden;
+    padding: 100px 0;
+    margin-bottom: 120px;
+ }
+
+ .upload-inner{
+    width: 35%;
+    float: right;
+    background-color: black;
+    padding: 150px;
+}
+ 
+ .upload-title{
+    text-decoration: none;
+    font-size: 32px;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-family: CormorantSC;
+ }
+
+ .container {
+	max-width: 600px;
+	width: 100%;
+	border-radius: 30px;
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	background: #242424;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.img-area .icon {
+	font-size: 100px;
+}
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+.img-area p {
+	color: #999;
+}
+.img-area p span {
+	font-weight: 600;
+}
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
+}
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
+}
+.img-area.active:hover::before {
+	opacity: 1;
+}
+.select-image {
+	display: inline-block;
+	width: 40%;
+    margin: auto;
+	padding: 16px 0;
+	border-radius: 15px;
+	background: rgb(83, 47, 145);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.select-image:hover {
+	background: rgb(66, 39, 109);
+}
+
+.upload-image {
+	display: inline-block;
+	width: 40%;
+    margin: 20px;
+	padding: 16px 0;
+	border-radius: 15px;
+	background: rgb(83, 47, 145);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.upload-image:hover {
+	background: rgb(66, 39, 109);
+}
+
+.upload-image:disabled,
+.upload-image[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
+
+ .about{
+    width: 100%;
+    color: white;
+    background: url(assets/Siri_astronaut_pours_blue_water_from_a_hose_on_flowers_on_a_mys_8f5f3870-91fc-4acb-94b2-70bc79cb5656.png) no-repeat right;
+    background-size: 65%;
+    overflow: hidden;
+    padding: 100px 0;
+ }
+
+ .about-inner{
+    width: 35%;
+    float: left;
+    background-color: black;
+    padding: 150px;
+}
+ 
+ .about-title{
+    text-decoration: none;
+    font-size: 32px;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+    font-family: CormorantSC;
+ }
+
+ .about-text{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 40px;
+ }
+
+ .popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+ }
+
+ .popup .popup-content{
+    position: absolute;
+    left: 50%;
+    margin-top: 30%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    color: black;
+    width: 450px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+ }
+
+ .popup-title{
+    font-family: CormorantSC;
+ }
+
+ .popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+ }
+
+ .popup.active .overlay{
+    display: block;
+ }
+
+ .popup.active .popup-content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+ }

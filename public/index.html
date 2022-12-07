@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Gallery</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Titillium+Web:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="home">
+
+        <div class="nav" >
+            <nav>
+                    <a class="home" href="#home">
+                        <p>AI Art Gallery</p>
+                    </a>
+                <ul>
+                    <li><a href="#gallery-1">Gallery</a></li>
+                    <li><a href="#tutorial">How to</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#about">Learn more</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bg">
+
+        </div>
+        
+        <div class="content">
+            <p class="cover-para-1">Welcome to the gallery</p>
+            <p class="cover-para-2">Scroll down to explore</p>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery" id="gallery-1">
+        <p class="gallery-title">Gallery</p>
+
+        <div id="gallery">
+            <img src="assets/LeviJohnson_cleopatra_close-up_face_eyes_emotional_jewellery_go_969a369f-2c03-40b2-9351-fd56cf73bad3.png">
+            <img src="assets/Thanh_Bita_pine-shaped_hamburger_under_the_pine_tree_with_gift__19cb9a4e-4c32-41c1-9159-a8c06517900e.png">
+            <img src="assets/Clarysa_cemetery_4K_shot_on_Canon_EOS_6D_Mark_II_ISO_100_1250_s_09078887-f675-4b49-849d-c416c94cf1d0.png">
+            <img src="assets/an orchestra of characters playing instruments on fire in a chapel.png">
+            <img src="assets/glass of water, fishes, photo realistic, fine details, unreal engine.png">
+            <img src="assets/Mister_Andersen_Norway_City_of_Stavanger_winter_in_the_air_myst_c60eb7a1-9531-4250-a123-14049d403588.png">
+            <img src="assets/Gymbz_neon_forest_c0736d62-15c0-438f-a78b-4df74572db60.png">
+            <img src="assets/deRiveter85_bioshock_big_daddy_gun_rapture_under_water_art_deco_13551140-0945-4fea-add9-cda0a15c4d2d.png">
+            <img src="assets/deRiveter85_dark_souls_knight_sword_27544f50-5961-4b6e-9e83-ee1ff63e57e6.png">
+            <img src="assets/Clarysa_cemetery_4K_shot_on_Canon_EOS_6D_Mark_II_ISO_100_1250_s_a466cc46-6cd0-4343-ab0f-5b24119a08f5.png">
+            <img src="assets/Siri_a_man_sitting_in_a_prison_cell_00dbc71c-0e51-4690-a156-ff0f062a6acb.jpg">
+            <img src="assets/Siri_a_man_sitting_in_a_prison_cell_371b8037-c104-48f2-b474-c1105e45fb7f.jpg">
+            <img src="assets/Siri_a_man_sitting_in_a_prison_cell_cdc11912-76ae-4ff4-baaf-9b8306b0ed14.jpg">
+            <img src="assets/Siri_digital_artist_concept_art_AI-generated_NFT_dark_fall_crit_1381563e-f110-46a8-a9ed-36dca3fd2d5a.jpg">
+            <img src="assets/Siri_digital_artist_concept_art_AI-generated_NFT_dark_fall_crit_2e7978ee-9586-4046-801c-403f0abcedf4.jpg">
+            <img src="assets/Siri_digital_artist_concept_art_AI-generated_NFT_dark_fall_crit_fd1232cf-40d0-4409-aef3-f73f01d4be96.jpg">
+            <img src="assets/Siri_dragon_tiger_china_traditional--tile_3210abc5-0d76-454c-9c6c-b40fc89203cd.png">
+            <img src="assets/Mega__space_worlds_knighthighly_detailed_photoralistic_30b9455b-4bff-4e89-b6b3-683af0c5af87.png">
+            <img src="assets/Siri_astronaut_pours_blue_water_from_a_hose_on_flowers_on_a_mys_8f5f3870-91fc-4acb-94b2-70bc79cb5656.png">
+            <img src="assets/Motka_light_green_blue_analytics_study_infographic_plain_light__79588de7-8df3-4ef8-8728-aadbc3a38271.png">
+        </div>
+    </div>
+
+    <div class="tutorial" id="tutorial">
+        <div class="tutorial-inner" id="tutorial-inner">
+            <h2>Choose a tool</h2>
+            
+            <div class="tutorial-title">
+                <span id="Disco">Disco Diffusion</span>
+                <span id="Midjourney">Midjourney</span>
+                <span id="Stable">Stable Diffusion</span>
+            </div>
+            <p class="text" id="text">
+                Disco Diffusion, Midjourney and Stable Diffusion are three pieces of open source software that generate images in response to a language prompt. A prompt, which is a series of words, is a key to tuning the tools to translate your thoughts into images. 
+                <br>Here at the gallery, the three installations with user interfaces using local GPUs aim to make the creation process more accessible and more efficient. We encourage you to explore these three different tools and to learn to talk to these text-to-image models, we first start with “prompt engineering”. A helpful analogy to understand this process is to think of a prompt as a search query just like how we use the Google search engine. Similarly, we give these image generators a search query to search among a structured representation of all the images it was trained on. We then evaluate the result, and refine the input text until the output image is the closest to our expectations among all possible outputs. 
+                <br>For example, if you use “/imagine prompt: colorful butterfly”, the AI will generate an image of what it thinks a colorful butterfly is. However, using one adjective like “colorful” is usually not sufficient. If you use one adjective, the AI will usually generate something simple. Hence, it’s recommended that you use multiple adjectives and descriptions for the AI to generate an accurate image. Instead of “colorful butterfly”, you can use “a rainbow-colored butterfly flying across a field of flowers during a sunset”. The more descriptive you are, the better the results.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="upload"  id="upload">
+        <div class="upload-inner">
+            <div class="upload-title">
+                <p>Upload</p>
+            </div>
+            <div class="container">
+                <input type="file" id="file" accept="image/*" hidden>
+                <div class="img-area" data-img="">
+                    <i class='bx bxs-cloud-upload icon'></i>
+                    <h3>Upload Image</h3>
+                    <p>Image size must be less than <span>2MB</span></p>
+                </div>
+                <button class="select-image">Select Image</button>
+                <button class="upload-image">Upload</button>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="overlay">
+                
+            </div>
+            <div class="popup-content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <h1 class="popup-title">Thank you!</h1>
+                <p>But be careful! As much machine-learning software utilises a database of images collated from other artists. Consider not showing your prompts or using any artist's name or work in the generation of artwork — especially where their work is still under copyright protection. Without knowing the specifics of the tools and prompts used, it's difficult to give a definitive answer on whether using the style of an artist would be considered an infringement of their rights — but it may nevertheless annoy said artist and result in unwanted bad press and/or infringement proceedings.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-inner">
+            <div class="about-title">
+                <span id="choose">Learn more</span>
+            </div>
+            <p class="about-text">
+                Every artist enjoys having the idea that their originality stands out and that their work is completely unique. But if you put in the time and effort, you'll find that uniqueness is just a romantic idea that doesn't really exist in the idealized form that people think it does. 
+                <br>If you've been on social media throughout the last few months, chances are you've seen a plethora of artwork, written content, memes and more - created not by a human, but by an AI. Whilst software and new machine-learning AI systems such as DALL-E 2 and Midjourney have recently become the latest creative craze online, there has been little discussion as to the legal questions surrounding AI-generated content. It may seem a bit surreal or dystopian for some, but there is now a whole new universe of questions to be raised regarding intellectual property and AI.
+                <br>Is it stealing, copying, or inspiration if you utilize someone else's artwork and artificial intelligence to create your own? The largest issue still is: Who owns AI-generated art once it has been produced? Artificial intelligence (AI) has long produced art. But this year's technologies, such DALL-E 2, Midjourney, and Stable Diffusion, have allowed even the most inexperienced artists to produce intricate, abstract, or lifelike pieces by merely entering a few words into a text box.
+                <br>If you try to upload "your" AI-Generated artwork, you will see the copyright at the bottom of the popup window, but who owns this art piece is randomly generated by the computer algorithm.
+            </p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+    <script src="assets/OrbitControls.js"></script>
+    <script src="assets/OBJLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="three.js"></script>
+</body>
+
+</html>
