@@ -1,5 +1,21 @@
-window.addEventListener('load', function () {
+let loadingManager = new THREE.LoadingManager();
+let progressBar = document.getElementById('progress-bar');
 
+loadingManager.onProgress = function(url, loaded, total){
+    progressBar.value = (loaded / total) * 100;
+}
+
+let progressBarContainer = document.querySelector('.progress-bar-container');
+
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+
+loadingManager.onLoad = function(){
+    progressBar.value = 100;
+    delay(500).then(() =>
+    progressBarContainer.style.display = "none");
+}
     //color
     let blueviolet = new THREE.Color("rgb(138, 43, 226)");
     var randomColor = "#000000".replace(/0/g, function () { return (~~(Math.random() * 16)).toString(16); });
@@ -102,9 +118,9 @@ window.addEventListener('load', function () {
         });
 
         //obj
-        let objLoader = new THREE.OBJLoader();
+        let objLoader = new THREE.OBJLoader(loadingManager);
         //new group
-        let group = new THREE.Group();
+        let group = new THREE.Group(loadingManager);
         //objLoader.setMaterials(cubeMaterial);
         objLoader.setPath('assets/');
         objLoader.load('OR.obj', function (object) {
@@ -206,4 +222,3 @@ window.addEventListener('load', function () {
     }
     init();
     render();
-});
