@@ -11,6 +11,14 @@ https://ai-art-gallery.glitch.me
 
 https://docs.google.com/presentation/d/1hxi4xvh_hBIOo8SXlfsuKn6TbpRaSL0V/edit?usp=sharing&ouid=101571181520503869864&rtpof=true&sd=true
 
+<h3>Background: </h3>
+
+If you've been on social media throughout the last few months, chances are you've seen a plethora of artwork, written content, memes and more - created not by a human, but by an AI. Whilst software and new machine-learning AI systems such as DALL-E 2 and Midjourney have recently become the latest creative craze online, there has been little discussion as to the legal questions surrounding AI-generated content. It may seem a bit surreal or dystopian for some, but there is now a whole new universe of questions to be raised regarding intellectual property and AI.
+
+As much machine-learning software utilises a database of images collated from other artists. Is it stealing, copying, or inspiration if you utilize someone else's artwork and artificial intelligence to create your own? The largest issue still is: Who owns AI-generated art once it has been produced?
+
+My initial critical thinking about AI-Generated art is about the copyright, is it belongs to the artist(user)/developer/company/AI? In other words, what do people or organizations think about AI-generated art? Do arts must have to be created by people?
+
 <h3>Concept Write-Up:</h3>
 
 Combining Three.js, Socket.IO, MongoDB to create a simple AI-Generated art gallery website to invite people who haven’t used AI-generated art before in order to raise people’s awareness of AI copyright thinking.
